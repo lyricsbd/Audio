@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Audio Player </title>
+
+
+<!-- Dependencies --> 
+<script src="js/modernizr.custom.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<!-- LIBRERIAS DE JQUERY-UI -->
+<!-- ESTAS LIBRERIAS HAN SIDO MODIFICADAS PARA EVITAR UN PROBLEMA DE COMPATIBILIDAD -->
+<!-- EL PROBLEMA ERA CON LA FUNCION DRAGGABLE() DE JQUERY-UI -->
+<link rel="stylesheet" href="../thirdparty/jquery-ui.min.css">
+<script src="js/jquery-ui.min.js">  </script>
+
+<!-- Able Player CSS -->  
+<link rel="stylesheet" href="css/ableplayer.css" type="text/css"/>
+
+<!-- CSS for interactive transcript --> 
+<link rel="stylesheet" href="css/ableplayer-transcript.css" type="text/css"/>
+
+<!-- Able Player JavaScript -->
+<script src="js/ableplayer.js"></script>
+
+</head>
+
+<body>
+
+
+
+<!-- use the following markup for each media element -->
+<audio id="audio1" class="ump-media" preload="auto" data-able-player data-lyrics-mode data-transcript-title="Sing along!">
+  <source type="audio/ogg" src="http://sidar.org/ableplayer2/media/paulallen.ogg"/>
+  <source type="audio/mpeg" src="http://sidar.org/ableplayer2/media/paulallen.mp3"/>
+  <track kind="captions" src="http://sidar.org/ableplayer2/media/paulallen_en.vtt" srclang="en" label="English"/>
+</audio>
+
+</body>
+</html>
